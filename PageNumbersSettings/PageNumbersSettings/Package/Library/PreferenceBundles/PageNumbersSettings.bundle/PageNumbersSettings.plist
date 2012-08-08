@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>PageNumbers</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Settings</string>
+			<key>footerText</key>
+			<string>You must respring after making changes for the tweak to work properly.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>key</key>
+			<string>tweakEnabled</string>
+			<key>label</key>
+			<string>Switch</string>
+			<key>PostNotification</key>
+			<string>com.fire30.PageNumbersSettings.settingsChanged</string>
+			<key>defaults</key>
+			<string>com.fire30.PageNumbersSettings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>key</key>
+			<string>LinkListCell7</string>
+			<key>label</key>
+			<string>Color</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>validTitles</key>
+			<array>
+				<string>Black</string>
+				<string>Dark Gray</string>
+				<string>Light Gray</string>
+				<string>White</string>
+				<string>Gray</string>
+				<string>Red</string>
+				<string>Green</string>
+				<string>Blue</string>
+				<string>Cyan</string>
+				<string>Yellow</string>
+				<string>Magenta</string>
+				<string>Orange</string>
+				<string>Purple</string>
+				<string>Brown</string>
+				<string>Disable Dots</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<string>3</string>
+				<string>4</string>
+				<string>5</string>
+				<string>6</string>
+				<string>7</string>
+				<string>8</string>
+				<string>9</string>
+				<string>10</string>
+				<string>11</string>
+				<string>12</string>
+				<string>13</string>
+				<string>14</string>
+			</array>
+			<key>default</key>
+			<integer>3</integer>
+			<key>PostNotification</key>
+			<string>com.fire30.PageNumbersSettings.settingsChanged</string>
+			<key>defaults</key>
+			<string>com.fire30.PageNumbersSettings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>default</key>
+			<string>22</string>
+			<key>key</key>
+			<string>fontSize</string>
+			<key>keyboard</key>
+			<string>numbers</string>
+			<key>label</key>
+			<string>Font Size</string>
+			<key>placeholder</key>
+			<string>Type in desired font size</string>
+			<key>PostNotification</key>
+			<string>com.fire30.PageNumbersSettings.settingsChanged</string>
+			<key>defaults</key>
+			<string>com.fire30.PageNumbersSettings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>makeDonation:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Donate!</string>
+		</dict>
+		<dict>
+			<key>footerText</key>
+			<string>© 2012 Fire30</string>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

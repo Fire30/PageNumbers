@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32DAAB0015D1F459002B543E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DAAAFF15D1F459002B543E /* Foundation.framework */; };
+		32DAAB0215D1F459002B543E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DAAB0115D1F459002B543E /* UIKit.framework */; };
+		32DAAB0415D1F459002B543E /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DAAB0315D1F459002B543E /* Preferences.framework */; };
+		32DAAB0F15D1F459002B543E /* PageNumbersSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DAAB0E15D1F459002B543E /* PageNumbersSettingsController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32DAAAFC15D1F459002B543E /* PageNumbersSettings.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageNumbersSettings.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		32DAAAFF15D1F459002B543E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		32DAAB0115D1F459002B543E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		32DAAB0315D1F459002B543E /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Library/Frameworks/Preferences.framework; sourceTree = DEVELOPER_DIR; };
+		32DAAB0815D1F459002B543E /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		32DAAB0915D1F459002B543E /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		32DAAB0B15D1F459002B543E /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		32DAAB0C15D1F459002B543E /* PageNumbersSettings-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PageNumbersSettings-Info.plist"; sourceTree = "<group>"; };
+		32DAAB0D15D1F459002B543E /* PageNumbersSettingsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageNumbersSettingsController.h; sourceTree = "<group>"; };
+		32DAAB0E15D1F459002B543E /* PageNumbersSettingsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageNumbersSettingsController.m; sourceTree = "<group>"; };
+		32DAAB1315D1F459002B543E /* PageNumbersSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PageNumbersSettings.plist; path = Package/Library/PreferenceLoader/Preferences/PageNumbersSettings.plist; sourceTree = "<group>"; };
+		32DAAB1615D1F459002B543E /* PageNumbersSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PageNumbersSettings.plist; path = Package/Library/PreferenceBundles/PageNumbersSettings.bundle/PageNumbersSettings.plist; sourceTree = "<group>"; };
+		32DAAB1715D1F459002B543E /* PageNumbersSettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PageNumbersSettingsIcon.png; path = Package/Library/PreferenceBundles/PageNumbersSettings.bundle/PageNumbersSettingsIcon.png; sourceTree = "<group>"; };
+		32DAAB1815D1F459002B543E /* PageNumbersSettingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PageNumbersSettingsIcon@2x.png"; path = "Package/Library/PreferenceBundles/PageNumbersSettings.bundle/PageNumbersSettingsIcon@2x.png"; sourceTree = "<group>"; };
+		32DAAB1D15D1F459002B543E /* com.fire30.PageNumbersSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.fire30.PageNumbersSettings.plist; path = Package/var/mobile/Library/Preferences/com.fire30.PageNumbersSettings.plist; sourceTree = "<group>"; };
+		32DAAB1E15D1F459002B543E /* PageNumbersSettings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PageNumbersSettings-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32DAAAF815D1F459002B543E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DAAB0015D1F459002B543E /* Foundation.framework in Frameworks */,
+				32DAAB0215D1F459002B543E /* UIKit.framework in Frameworks */,
+				32DAAB0415D1F459002B543E /* Preferences.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32DAAAF015D1F459002B543E = {
+			isa = PBXGroup;
+			children = (
+				32DAAB0515D1F459002B543E /* PageNumbersSettings */,
+				32DAAAFE15D1F459002B543E /* Frameworks */,
+				32DAAAFD15D1F459002B543E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32DAAAFD15D1F459002B543E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAAFC15D1F459002B543E /* PageNumbersSettings.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32DAAAFE15D1F459002B543E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAAFF15D1F459002B543E /* Foundation.framework */,
+				32DAAB0115D1F459002B543E /* UIKit.framework */,
+				32DAAB0315D1F459002B543E /* Preferences.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32DAAB0515D1F459002B543E /* PageNumbersSettings */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB0D15D1F459002B543E /* PageNumbersSettingsController.h */,
+				32DAAB0E15D1F459002B543E /* PageNumbersSettingsController.m */,
+				32DAAB0615D1F459002B543E /* Package */,
+				32DAAB0A15D1F459002B543E /* Supporting Files */,
+			);
+			path = PageNumbersSettings;
+			sourceTree = "<group>";
+		};
+		32DAAB0615D1F459002B543E /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB0715D1F459002B543E /* DEBIAN */,
+				32DAAB1015D1F459002B543E /* Library */,
+				32DAAB1915D1F459002B543E /* var */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		32DAAB0715D1F459002B543E /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB0815D1F459002B543E /* control.txt */,
+				32DAAB0915D1F459002B543E /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		32DAAB0A15D1F459002B543E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB0B15D1F459002B543E /* PackageVersion.plist */,
+				32DAAB0C15D1F459002B543E /* PageNumbersSettings-Info.plist */,
+				32DAAB1E15D1F459002B543E /* PageNumbersSettings-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32DAAB1015D1F459002B543E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB1115D1F459002B543E /* PreferenceLoader */,
+				32DAAB1415D1F459002B543E /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		32DAAB1115D1F459002B543E /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB1215D1F459002B543E /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		32DAAB1215D1F459002B543E /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB1315D1F459002B543E /* PageNumbersSettings.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		32DAAB1415D1F459002B543E /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB1515D1F459002B543E /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		32DAAB1515D1F459002B543E /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB1615D1F459002B543E /* PageNumbersSettings.plist */,
+				32DAAB1715D1F459002B543E /* PageNumbersSettingsIcon.png */,
+				32DAAB1815D1F459002B543E /* PageNumbersSettingsIcon@2x.png */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		32DAAB1915D1F459002B543E /* var */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB1A15D1F459002B543E /* mobile */,
+			);
+			name = var;
+			sourceTree = "<group>";
+		};
+		32DAAB1A15D1F459002B543E /* mobile */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB1B15D1F459002B543E /* Library */,
+			);
+			name = mobile;
+			sourceTree = "<group>";
+		};
+		32DAAB1B15D1F459002B543E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB1C15D1F459002B543E /* Preferences */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		32DAAB1C15D1F459002B543E /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				32DAAB1D15D1F459002B543E /* com.fire30.PageNumbersSettings.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		32DAAAF915D1F459002B543E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32DAAAFB15D1F459002B543E /* PageNumbersSettings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32DAAB2115D1F459002B543E /* Build configuration list for PBXNativeTarget "PageNumbersSettings" */;
+			buildPhases = (
+				32DAAAF715D1F459002B543E /* Sources */,
+				32DAAAF815D1F459002B543E /* Frameworks */,
+				32DAAAF915D1F459002B543E /* Headers */,
+				32DAAAFA15D1F459002B543E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PageNumbersSettings;
+			productName = PageNumbersSettings;
+			productReference = 32DAAAFC15D1F459002B543E /* PageNumbersSettings.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32DAAAF215D1F459002B543E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 32DAAAF515D1F459002B543E /* Build configuration list for PBXProject "PageNumbersSettings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 32DAAAF015D1F459002B543E;
+			productRefGroup = 32DAAAFD15D1F459002B543E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32DAAAFB15D1F459002B543E /* PageNumbersSettings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32DAAAFA15D1F459002B543E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32DAAAF715D1F459002B543E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DAAB0F15D1F459002B543E /* PageNumbersSettingsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		32DAAB1F15D1F459002B543E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		32DAAB2015D1F459002B543E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		32DAAB2215D1F459002B543E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PageNumbersSettings/PageNumbersSettings-Prefix.pch";
+				INFOPLIST_FILE = "PageNumbersSettings/PageNumbersSettings-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = 192.168.1.51;
+				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		32DAAB2315D1F459002B543E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PageNumbersSettings/PageNumbersSettings-Prefix.pch";
+				INFOPLIST_FILE = "PageNumbersSettings/PageNumbersSettings-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = 192.168.1.51;
+				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32DAAAF515D1F459002B543E /* Build configuration list for PBXProject "PageNumbersSettings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32DAAB1F15D1F459002B543E /* Release */,
+				32DAAB2015D1F459002B543E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32DAAB2115D1F459002B543E /* Build configuration list for PBXNativeTarget "PageNumbersSettings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32DAAB2215D1F459002B543E /* Release */,
+				32DAAB2315D1F459002B543E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32DAAAF215D1F459002B543E /* Project object */;
+}
